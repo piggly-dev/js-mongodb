@@ -1,6 +1,6 @@
 {
 	"name": "@piggly/mongodb",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "An wrapper for MongoDB using @piggly/ddd-toolkit library as dependency.",
 	"scripts": {
 		"clean": "rimraf dist",
@@ -88,11 +88,11 @@
 		"typescript": "^5.8.2",
 		"typescript-eslint": "^8.26.0"
 	},
-	"dependencies": {
-		"@piggly/ddd-toolkit": "^3.7.1",
-		"@piggly/event-bus": "^2.1.2",
-		"debug": "^4.4.0",
-		"mongodb": "^6.14.2",
-		"zod": "^3.24.2"
+	"peerDependencies": {
+		"@piggly/ddd-toolkit": ">=4.0",
+		"@piggly/event-bus": ">=2.1",
+		"debug": ">=4.4",
+		"mongodb": ">=6.14",
+		"zod": ">=3.24"
 	}
 }
